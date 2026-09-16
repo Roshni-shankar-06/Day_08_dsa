@@ -6,9 +6,7 @@ class Solution:
         
         for word in words:
             # Check if adding the new word exceeds maxWidth
-            # cur_len + len(word) + len(cur_line) accounts for word lengths + minimum 1 space per gap
-            if cur_len + len(word) + len(cur_line) > maxWidth:
-                # Format the current line
+         
               
               
     
