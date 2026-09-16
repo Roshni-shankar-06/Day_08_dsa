@@ -18,8 +18,4 @@ class Solution:
             cur_len += len(word)
         
         # Last line handling (left-justified)
-        last_line = ' '.join(cur_line)
-        last_line += ' ' * (maxWidth - len(last_line))
-        res.append(last_line)
-        
-        return res
+    
