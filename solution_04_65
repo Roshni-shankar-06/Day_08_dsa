@@ -16,9 +16,5 @@ class Solution:
                     return False
                 seen_dot = True
             elif char in ['e', 'E']:
-                if seen_e or not seen_digit:
-                    return False
-                seen_e = True
-                seen_digit = False  # Need a digit after 'e'/'E'
-            elif char in ['+', '-']:
+             
             
