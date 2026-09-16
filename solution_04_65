@@ -4,9 +4,6 @@ class Solution:
         if not s:
             return False
         
-        seen_digit = False
-        seen_dot = False
-        seen_e = False
-        
+     
      
             
