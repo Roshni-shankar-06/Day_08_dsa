@@ -5,5 +5,4 @@ class Solution:
    
     import math
 
-    return math.comb(n + k - 1, 2 * k) % MOD
 
