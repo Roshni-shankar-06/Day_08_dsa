@@ -2,10 +2,7 @@ class Solution:
     def fullJustify(self, words: list[str], maxWidth: int) -> list[str]:
         res = []
         cur_line = []
-        cur_len = 0
-        
-        for word in words:
-            # Check if adding the new word exceeds maxWidth
+  
          
               
               
