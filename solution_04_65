@@ -12,9 +12,5 @@ class Solution:
             if char.isdigit():
                 seen_digit = True
             elif char in ['.']:
-                if seen_dot or seen_e:
-                    return False
-                seen_dot = True
-            elif char in ['e', 'E']:
              
             
