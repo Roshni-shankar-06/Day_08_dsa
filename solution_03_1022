@@ -5,5 +5,3 @@ class Solution:
         val = (val << 1) | root.val
         if not root.left and not root.right:
             return val
-        return self.sumRootToLeaf(root.left, val) + self.sumRootToLeaf(root.right, val)
-
