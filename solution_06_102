@@ -12,8 +12,4 @@ class Solution:
             curr_level = []
             for _ in range(len(q)):
                 node = q.popleft()
-                curr_level.append(node.val)
-                
-                if node.left:
-                    q.append(node.left)
-                
+               
