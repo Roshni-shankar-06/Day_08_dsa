@@ -1,1 +1,25 @@
-
+class Solution:
+    def fullJustify(self, words: list[str], maxWidth: int) -> list[str]:
+        res = []
+        cur_line = []
+        cur_len = 0
+        
+        for word in words:
+            # Check if adding the new word exceeds maxWidth
+            # cur_len + len(word) + len(cur_line) accounts for word lengths + minimum 1 space per gap
+            if cur_len + len(word) + len(cur_line) > maxWidth:
+                # Format the current line
+                for i in range(maxWidth - cur_len):
+                    cur_line[i % (len(cur_line) - 1 or 1)] += ' '
+                res.append(''.join(cur_line))
+                cur_line, cur_len = [], 0
+            
+            cur_line.append(word)
+            cur_len += len(word)
+        
+        # Last line handling (left-justified)
+        last_line = ' '.join(cur_line)
+        last_line += ' ' * (maxWidth - len(last_line))
+        res.append(last_line)
+        
+        return res
