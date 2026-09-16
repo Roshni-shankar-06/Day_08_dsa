@@ -1,15 +1,2 @@
-from collections import deque
 
-class Solution:
-    def zigzagLevelOrder(self, root):
-        if not root:
-            return []
-        
-        result = []
-        queue = deque([root])
-        left_to_right = True
-        
-        while queue:
-            level_size = len(queue)
-            level_values = deque()
           
