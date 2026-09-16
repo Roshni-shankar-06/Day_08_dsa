@@ -21,9 +21,4 @@ class Solution:
                 seen_e = True
                 seen_digit = False  # Need a digit after 'e'/'E'
             elif char in ['+', '-']:
-                if i > 0 and s[i - 1] not in ['e', 'E']:
-                    return False
-            else:
-                return False
-                
-        return seen_digit
+            
