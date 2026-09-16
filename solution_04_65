@@ -8,9 +8,5 @@ class Solution:
         seen_dot = False
         seen_e = False
         
-        for i, char in enumerate(s):
-            if char.isdigit():
-                seen_digit = True
-            elif char in ['.']:
-             
+     
             
