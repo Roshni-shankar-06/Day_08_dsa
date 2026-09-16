@@ -1,6 +1,5 @@
 class Solution:
     def sumRootToLeaf(self, root: TreeNode | None, val: int = 0) -> int:
         if not root:
-            return 0
-        val = (val << 1) | root.val
+       
        
