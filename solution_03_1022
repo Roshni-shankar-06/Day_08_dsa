@@ -3,5 +3,4 @@ class Solution:
         if not root:
             return 0
         val = (val << 1) | root.val
-        if not root.left and not root.right:
-            return val
+       
