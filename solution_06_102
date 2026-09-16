@@ -16,9 +16,4 @@ class Solution:
                 
                 if node.left:
                     q.append(node.left)
-                if node.right:
-                    q.append(node.right)
-                    
-            ans.append(curr_level)
-            
-        return ans
+                
